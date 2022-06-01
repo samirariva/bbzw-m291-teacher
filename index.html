@@ -1,31 +1,128 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Online-Shop X</title>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>bijoux pour toi</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
 
-  </head>
+<body>
+  <div class="header">
 
-  <body>
-    <pre> 
-        Startseite 1 & 2
-        
-        - Header mit Logo des Online-Shops 
-            - Hauptnavigation (2 Links: Shop, Game)
-        - Content 
-            - Über diese Seite, kurze Vorstellung des Shops, Motivation zum Mitmachen beim Spiel
-            - Formular (Vorname, Start Game Button) 
-        - Footer
-        
-    </pre>         
+    <div class="logo">
+      <a href="./index.html"><img class="logoimage" src="assets/graphics/bildmarke.png" alt="logo" /></a>
+    </div>
+
+    <div class="title">
+      <p class="h2">bijoux <br>
+         pour toi</p>
+    </div>
+
+    <div id="linkToShop">
+    <button class="button">
+        <a href="./shop.html">SHOP</a>
+      </button>
+    </div> 
+    
+
+  </div>
+
+  <div class="content">
+
+    <div>
+      <img class="startbild" src="assets/graphics/start.png" alt="startbild">
+  </div>
+    
+
+      <div class="aboutThisPage">
+      <p class="h1">ÜBER UNS </p>
+      <p class="fliestext">
+        Bijoux pour toi ist eine Schweizer Marke und wurde im Jahr 2021 vom Melina und Samira
+        gegründet. Wir möchten eleganten Schmuck mit einem Hauch von Rock-Chic in hoher Qualität und mit
+        einem fairen Preis-Leistungs-Verhältnis anbieten. Alle Schmuckstücke sind frei von den
+        Schwermetallen Nickel, Blei und Cadmium und deshalb auch für Personen mit
+        Kontaktallergien geeignet.
+      </p>
+      </div>
+
+      <!-- s. Musterlösung Prüfungsaufgabe https://jsfiddle.net/r_hatz/tnc6uv2o/  -->
+      <div id="formPanel">
+
+        <p class="h2"> Hier anmelden</p>
+
+      <input id="firstname" type="text" placeholder="Vorname"> <br>
+      <input id="lastname" type="text" placeholder="Nachname"> <br>
+      <input id="email" type="text" placeholder="Email"> <br>
+
+  
+      <input id="lieblingsschmuckfarbe" type="text" placeholder="Lieblingsschmuckfarbe"> 
+
+<!-- Wie geht ein normales Feld ohne Eingabe?
+
+      <div>
+        <input type="radio" id="gold" name="schmuckfarbe" value="gold"
+               checked>
+        <label for="gold">Gold</label>
+      </div>
+  
+
+      <div>
+        <input type="radio" id="silber" name="schmuckfarbe" value="silber"
+               checked>
+        <label for="silber">Silber</label>
+      </div>
+    
 
 
-  </body>
+      <div>
+        <input type="radio" id="rosegold" name="schmuckfarbe" value="rosegold"
+               checked>
+        <label for="rosegold">Rosegold</label>
+      </div>
 
-</html>
+        -->
 
+        <button class="button" id="submit">
+          <a href="./game.html">ABSENDEN</a>
+        </button>
+      </div>
+    
 
  
+  </div>
+
+
+
+  <div class="footer">
+    <hr>
+    <p class="h3">bijoux pour toi </p> 
+    <div class="adresse">
+     <p class="fliestext">
+      Kottenmatte 4 <br>
+      6210 Sursee <br>
+     </p> 
+    </div>
+  
+    <div class="socialmedia">
+    <!-- Icons Social Media-->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+      <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+      <a href="https://www.pinterest.de/" class="fa fa-pinterest"></a>
+    </div>
+
+
+
+    <button class="button">
+    <a href="./impressum.html">IMPRESSUM</a>
+    </button>
+  </div> 
+
+
+  <script src="assets/js/form.js"></script>
+</body>
+
+</html>
