@@ -4,21 +4,81 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dino Game</title>
+    <title>Game bijoux pour toi</title>
     <link rel="stylesheet" href="assets/css/game.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
 
   </head>
 
   <body>
-    <div id="game">
+    <div class="header">
+
+      <div class="logo">
+        <a href="./index.html"><img class="logoimage" src="assets/graphics/bildmarke.png" alt="logo" /></a>
+      </div>
+  
+      <div class="title">
+        <p class="h2">bijoux <br>
+           pour toi</p>
+      </div>
+  
+      <div id="linkToShop">
+      <button class="button">
+          <a href="./shop.html">SHOP</a>
+        </button>
+      </div> 
+      
+  
+    </div>
+
+    <div class="content">
+
+      <div class="aboutThisPage">
+        <p class="h1">SPIELE UND GEWINNE </p>
+        <p class="fliestext">
+          Versuche mit der Elster dem Punkt auszuweichen und die Schmuckstücke einzusammeln.
+          Hast du den höchsten Highscore aller Teilnehmer bis Ende Monat, wartet auf dich einen genialer Preis.
+        </p>
+        </div>
+
+       <div id="game">
       <div id="background"></div>
       <div id="dino"></div>
       <div id="rock"></div>
+      </div>
+      <div id="score" class="h3">0</div>
+      <div class="highscore h3">
+      Highscore <span class="h3" id="highscore-value">0</span>
+      </div>
+
     </div>
-    <div id="score">0</div>
-    <div class="highscore">
-      Highscore: <span id="highscore-value">0</span>
-    </div>
+
+    <div class="footer">
+      <hr>
+      <p class="h3">bijoux pour toi </p> 
+      <div class="adresse">
+       <p class="fliestext">
+        Kottenmatte 4 <br>
+        6210 Sursee <br>
+       </p> 
+      </div>
+    
+      <div class="socialmedia">
+      <!-- Icons Social Media-->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+        <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+        <a href="https://www.pinterest.de/" class="fa fa-pinterest"></a>
+      </div>
+  
+  
+  
+      <button class="button">
+      <a href="./impressum.html">IMPRESSUM</a>
+      </button>
+    </div> 
+  
 
 
     <script src="assets/js/game.js"></script>
