@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text&family=Poppins:wght@300&display=swap');
+
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.fliestext {
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+}
+
+a {
+  font-family: 'DM Serif Text';
+}
+
+
+.h1{
+  color: #7D9588;
+  padding: -15px;
+  font-family: 'DM Serif Text', serif;  
+  font-size: 35px;
+}
+
+.h2{
+  color:#FFFFFF;
+  padding: 12px;
+  font-family: 'DM Serif Text';
+  font-size: 26px;
+  margin: 0px;
+
+}
+
+.h3{
+  color: #7D9588;
+  padding: -15px;
+  font-family: 'DM Serif Text';
+  font-size: 18px;
+}
+
+.header {
+  height: 75px;
+  padding: 12px;
+  display: grid;
+  grid-template-columns: 100px 1fr 100px;
+  background-color: #7D9588;
+  text-align: justify;
+}
+
+.logoimage{
+  height: 60px;
+  width: 60px;
+}
+
+
+.title {
+  text-align: center;
+  font-weight: 300;
+  margin-top: -10px;
+  font-family: 'DM Serif Display', serif;
+}
+
+#linkToShop{
+  text-align: center;
+  padding: 3px;  
+}
+
+.button{
+  background-color: #BFAFC7;
+  border: none;
+  border-radius: 3px;
+  height: 30px;
+  width: auto;
+  padding: 5px;
+
+}
+
+
+a:-webkit-any-link {
+  padding: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+.content {
+  flex: auto;
+  background-color: #FFFFFF;
+  margin: auto;
+  max-width: 650px;
+}
+
+.startbild{
+  height: 100%; 
+  width:100%;
+}
+
+.aboutThisPage{
+  margin: 4px;
+  margin-bottom: 15px;
+  color: #000000;
+  padding: 12px;
+
+}
+
+#formPanel{
+  background-color: #7D9588;
+  grid-row-gap: 20px;
+  padding: 12px;
+  
+}
+
+button {
+  border: none;
+  background-color: #BFAFC7;
+  color: #FFFFFF;
+  border-radius: 12px;
+  padding: 12px;
+  margin-top: 25px;
+  margin-bottom: 10px;
+  width: 200px;
+  font-size: larger;
+
+}
+
+#firstname{
+  border-radius: 5px;
+  border:none;
+  color: #000000;
+  height: 20px;
+  padding: 12px;
+  margin: 5px;
+}
+
+#lastname{
+  border-radius: 5px;
+  border:none;
+  color: #000000;
+  height: 20px;
+  padding: 12px;
+  margin: 5px;
+
+}
+
+#email{
+  border-radius: 5px;
+  border:none;
+  color: #000000;
+  height: 20px;
+  width: 300px;
+  padding: 12px;
+  margin: 5px;
+}
+
+#lieblingsschmuckfarbe{
+  border-radius: 5px;
+  border:none;
+  color: #000000;
+  height: 20px;
+  width: 300px;
+  padding: 12px;
+  margin: 5px;
+  margin-bottom: 30px;
+}
+
+
+
+.footer {
+  height: 100px;
+  background-color: #ffffff;
+  text-align: center;
+  padding: 10px;
+  
+}
+
+.adresse{
+  padding: 5px;
+}
+
+.socialmedia{
+  text-align: center;
+  padding-top: 5px;
+  margin: auto;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 50px;
+    width: 80px;
+    text-align: center;
+    text-decoration: none;
+    margin: 30px 2px;
+    border-radius: 50%;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-pinterest {
+  background: #BFAFC7;
+  color: white;
+  height: 30px;
+  width: 30px;
+}
+
+.fa-instagram {
+  background: #BFAFC7;
+  color: white;
+  height: 30px;
+  width: 30px;
+  
+}
+
+.unseronlineshop{
+  margin: 4px;
+  margin-bottom: 15px;
+  color: #000000;
+  padding: 12px;
+  text-align: left;
+}
+
+.produktbild{
+  height: 150px;
+  width: 150px;
+  grid-template-columns: 100px 100px;
+}
+
+figcaption{
+ background-color: #ffffff;
+ position: absolute;
+ grid-template-columns: 100px 100px;
+ line-height: 25px;
+ text-align: center;
+ margin: -90px;
+ margin-left: auto;
+ align-items: center;
+}
