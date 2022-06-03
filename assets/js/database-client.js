@@ -9,9 +9,9 @@ const databaseClient = {
   data: {
     url: "https://database-teacher-onlineshop.herokuapp.com/sql",
     // ! Ändern Sie group (al1, al2, al3, b1, ...)
-    group: "teacher",
+    group: "b1",
     // ! Ändern Sie pw
-    pw: "37b46eb1",
+    pw: "85fef7f3",
     sql: ""
   },
 
@@ -35,9 +35,10 @@ const databaseClient = {
 
   // Mitgegeben wird der Name der Tabelle als String, die Felder als Array und die Werte als Array.
   // Beispiel: databaseClient.insertInto("customers", ["firstname", "email"], [firstname.value, email.value])
-  insertInto: async (tableName = "users", fields = ["email"], values = []) => {
-    const sql = `INSERT INTO ${tableName} (${fields.join(",")}) VALUES ("${values.join(",")}")`
+
+  insertInto: async (tableName = "users", fields = ["email", "vorname", "nachname", "farbe"], values = []) => {
+    const sql = `INSERT INTO ${tableName} (${fields.join(",")}) VALUES ('${values.join("','")}')`
     return await databaseClient.executeSqlQuery(sql)
-  }
+    }
 
 }
