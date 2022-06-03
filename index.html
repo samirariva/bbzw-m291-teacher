@@ -52,37 +52,13 @@
 
         <p class="h2"> Hier anmelden</p>
 
-      <input id="firstname" type="text" placeholder="Vorname"> <br>
-      <input id="lastname" type="text" placeholder="Nachname"> <br>
-      <input id="email" type="text" placeholder="Email"> <br>
+      <input id="firstname" type="text" placeholder="Vorname" required> <br>
+      <input id="lastname" type="text" placeholder="Nachname" required> <br>
+      <input id="email" type="email" placeholder="Email" required> <br>
 
   
-      <input id="lieblingsschmuckfarbe" type="text" placeholder="Lieblingsschmuckfarbe"> 
+      <input id="lieblingsschmuckfarbe" type="text" placeholder="Lieblingsschmuckfarbe" required> 
 
-<!-- Wie geht ein normales Feld ohne Eingabe?
-
-      <div>
-        <input type="radio" id="gold" name="schmuckfarbe" value="gold"
-               checked>
-        <label for="gold">Gold</label>
-      </div>
-  
-
-      <div>
-        <input type="radio" id="silber" name="schmuckfarbe" value="silber"
-               checked>
-        <label for="silber">Silber</label>
-      </div>
-    
-
-
-      <div>
-        <input type="radio" id="rosegold" name="schmuckfarbe" value="rosegold"
-               checked>
-        <label for="rosegold">Rosegold</label>
-      </div>
-
-        -->
 
         <button class="button" id="submit">
           <a href="./game.html">ABSENDEN</a>
@@ -123,6 +99,7 @@
 
 
   <script src="assets/js/form.js"></script>
+  <script src="assets/js/database-client.js"></script>
 </body>
 
 </html>
