@@ -5,8 +5,24 @@ const nachname  = document.getElementById("lastname")
 const farbe = document.getElementById("lieblingsschmuckfarbe")
 submit.disabled = true
 
+  
+    submit.disable = true
+  
+  vorname.addEventListener("change", () => {
+  validate()
+  })
+  
+  nachname.addEventListener("change", () => {
+  validate()
+  })
+
+  email.addEventListener("change", () => {
+    validate()
+    })
+
+
 const validate = () => {
-    if (email.value == "") {
+    if (email.value == "" || vorname.value == "" || nachname.value == "") {
         submit.disabled = true
     } else {
         submit.disabled = false
